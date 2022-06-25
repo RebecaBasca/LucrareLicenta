@@ -94,14 +94,16 @@ export const Footer = () => {
                 }
             </Box>
             <Box>
-                <img
-                    src={mapIcon}
-                    width="100%"
-                    style={{
-                        maxWidth: 300
-                    }}
-                    alt=""
-                />
+                <a href="https://www.google.com/maps/place/Strada+Dej+14,+Timi%C8%99oara+300254/@45.7745218,21.2161813,17z/data=!4m5!3m4!1s0x47456795abb0a635:0x447b7050515e7644!8m2!3d45.774548!4d21.217855">
+                    <img
+                        src={mapIcon}
+                        width="100%"
+                        style={{
+                            maxWidth: 300,
+                            borderRadius: '5px'
+                        }}
+                    />
+                </a>
             </Box>
         </Box>
     )
