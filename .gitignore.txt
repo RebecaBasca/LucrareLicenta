@@ -1,0 +1,44 @@
+#React
+
+# dependencies
+/node_modules
+ReactApp/.pnp
+ReactApp/.pnp.js
+
+# testing
+ReactApp/coverage
+
+# production
+ReactApp/build
+
+# misc
+ReactApp/.DS_Store
+ReactApp/.env.local
+ReactApp/.env.development.local
+ReactApp/.env.test.local
+ReactApp/.env.production.local
+
+ReactApp/npm-debug.log*
+ReactApp/yarn-debug.log*
+ReactApp/yarn-error.log*
+
+ReactApp/.idea
+
+
+
+#NodeJS
+
+# Default ignored files
+NodeJSApp/shelf/
+NodeJSApp/workspace.xml
+# Editor-based HTTP Client requests
+NodeJSApp/httpRequests/
+NodeJSApp/node_modules/
+
+
+#Flask
+
+FlaskApp/venv/
+FlaskApp/templates/
+FlaskApp/_pycache_/
+FlaskApp/.idea/
