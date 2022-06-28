@@ -4,7 +4,11 @@
 
 Conține toate elementele ce construiesc interfața prezentată utilizatorului prin care beneficiază de toate facilitățile oferite de platformă și este un mediu ce permite comunicarea cu partea de backend necesară.
 
-Proiectul se poate deschide accesând [http://localhost:3001](http://localhost:3001) în browser.
+Pentru a crea o aplicație React într-un IDE este nevoie de rularea comenzii `npx create-react-app my-app`, iar pentru a utiliza limbajul TypeScript există comanda  `npx create-react-app my-app --template typescript`, care inițializează un template în care fișierele au extensia .ts. După executarea acestei comenzi se creează structura inițială a proiectului și se instalează dependențele necesare.
+
+Pentru a vizualiza proiectul în browser, la adresa [http://localhost:3001](http://localhost:3001), se utilizează în terminal comanda `npm start`, urmând ca fiecare modificare a codului să fie observată în timp real.
+
+
 
 # Structură
 
