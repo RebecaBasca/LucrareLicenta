@@ -8,19 +8,19 @@ Proiectul se poate deschide accesând [http://localhost:3001](http://localhost:3
 
 # Structură
 
-## Folder SRC
+## Folder **SRC**
  
  Conține tot ce este necesar realizării platformei și este format din:
  
- - Folder api
+ - Folder **api**
  
  Format din fișiere de tip TypeScript în care se inițializează toate rutele cererilor HTTP folosite pentru a comunica cu serverul, care sunt utilizate mai apoi pentru a popula paginile cu informații din baza de date, a modifica, a prelua și a șterge datele dorite.
  
- - Folder assets
+ - Folder **assets**
  
  Conține elementele statice media afișate pe platformă, cum ar fi logoul cabinetului sau alte pictograme folosite.
  
- - Folder components
+ - Folder **components**
  
  Caracteristica principală a folosirii ReactJS este faptul că permite să fie codul împărțit în segmente de dimensiuni mai mici, reutilizabile. Astfel, în acest folder se găsesc mai multe componente definite separat ce sunt utilizate în realizarea paginilor, ce pot fi utilizate de câte ori se dorește. Câteva exemple dintre acestea ar fi componenta de footer, structura unui buton sau o componentă ce se ocupă cu inputurile completate de utilizatori.
  
