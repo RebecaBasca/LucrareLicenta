@@ -8,7 +8,7 @@ Proiectul se poate deschide accesând [http://localhost:3001](http://localhost:3
 
 # Structură
 
-## Folder **SRC**
+## Folder SRC
  
  Conține tot ce este necesar realizării platformei și este format din:
  
@@ -24,7 +24,7 @@ Proiectul se poate deschide accesând [http://localhost:3001](http://localhost:3
  
  Caracteristica principală a folosirii ReactJS este faptul că permite să fie codul împărțit în segmente de dimensiuni mai mici, reutilizabile. Astfel, în acest folder se găsesc mai multe componente definite separat ce sunt utilizate în realizarea paginilor, ce pot fi utilizate de câte ori se dorește. Câteva exemple dintre acestea ar fi componenta de footer, structura unui buton sau o componentă ce se ocupă cu inputurile completate de utilizatori.
  
- - Folder screens
+ - Folder **screens**
  
  În screens se regăsește câte un folder separat pentru fiecare pagină din componența proiectului, deoarece fiecare dintre acestea conține un fișier cu sintaxă JSX, numit index.tsx, în care sunt definite în ordine elementele din pagină, un fișier hooks.ts, unde sunt definite constantele folosite și efectele ce vor avea loc la fiecare randare. Fișierele types definesc tipurile stricte ale variabilelor folosite, iar cele cu extensia .css conțin stilizarea unor componente, realizată separat pentru a păstra codul mai structurat.
 
