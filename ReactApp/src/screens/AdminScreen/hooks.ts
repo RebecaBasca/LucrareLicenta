@@ -101,7 +101,6 @@ export const useAdminScreen = () => {
     }
 
     const handleAddService = () => {
-        // TODO: de validare
 
         if(servicePicture !== null) {
             const formData = new FormData();
@@ -216,7 +215,7 @@ export const useAdminScreen = () => {
             type: 'specialty'
         },
         {
-            name: 'Poza',
+            name: 'Poză',
             type: 'picture'
         },
         {
@@ -235,7 +234,7 @@ export const useAdminScreen = () => {
             type: 'category'
         },
         {
-            name: 'Poza',
+            name: 'Poză',
             type: 'picture'
         },
         {
@@ -243,11 +242,11 @@ export const useAdminScreen = () => {
             type: 'description'
         },
         {
-            name: 'Pret',
+            name: 'Preț',
             type: 'price'
         },
         {
-            name: 'Durata',
+            name: 'Durată',
             type: 'time_span'
         }
     ];

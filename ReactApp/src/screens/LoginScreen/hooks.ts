@@ -18,8 +18,8 @@ const useLoginScreen = () => {
     const navigate = useNavigate();
 
     const loginContent = {
-        title: 'Bine ai revenit in contul tau!',
-        description: 'Vezi programarile tale in parcursul din cadrul cabinetului',
+        title: 'Bine ai revenit in contul tău!',
+        description: 'Vezi parcursul tău din cadrul cabinetului',
         btnText: 'Log in'
     };
 

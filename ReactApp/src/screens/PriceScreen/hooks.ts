@@ -12,7 +12,7 @@ export const usePriceScreen = () => {
             items: []
         },
         {
-            title: 'Servicii pentru adulti',
+            title: 'Servicii pentru adulți',
             bgColor: '#F3DFC1',
             type: 'adults',
             items: []

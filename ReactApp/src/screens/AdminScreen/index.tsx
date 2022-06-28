@@ -8,29 +8,29 @@ import InputComponent from "../../components/InputComponent";
 import {useAdminScreen} from "./hooks";
 
 const AdminScreen = () => {
-   const {
-       serviceAddModal,
-       afterOpenModal,
-       setServiceAddModal,
-       customStyles,
-       serviceValues,
-       onChangeService,
-       setServicePicture,
-       handleAddService,
-       therapistAddModal,
-       therapistValues,
-       onChangeTherapist,
-       setTherapistPicture,
-       handleAddTherapist,
-       spaceBetween,
-       therapistsHeaders,
-       therapistsRows,
-       handleDelete,
-       setTherapistAddModal,
-       serviceHeaders,
-       serviceRows,
-       handleDeleteService
-   } = useAdminScreen();
+    const {
+        serviceAddModal,
+        afterOpenModal,
+        setServiceAddModal,
+        customStyles,
+        serviceValues,
+        onChangeService,
+        setServicePicture,
+        handleAddService,
+        therapistAddModal,
+        therapistValues,
+        onChangeTherapist,
+        setTherapistPicture,
+        handleAddTherapist,
+        spaceBetween,
+        therapistsHeaders,
+        therapistsRows,
+        handleDelete,
+        setTherapistAddModal,
+        serviceHeaders,
+        serviceRows,
+        handleDeleteService
+    } = useAdminScreen();
 
     return (
         <>
@@ -58,7 +58,7 @@ const AdminScreen = () => {
                         onChange={onChangeService}
                     />
                     <InputComponent
-                        placeholder="Pret"
+                        placeholder="Preț"
                         style={{
                             minWidth: 320
                         }}
@@ -67,7 +67,7 @@ const AdminScreen = () => {
                         onChange={onChangeService}
                     />
                     <InputComponent
-                        placeholder="Durata"
+                        placeholder="Durată"
                         style={{
                             minWidth: 320
                         }}
@@ -221,7 +221,7 @@ const AdminScreen = () => {
             >
                 <div>
                     <CommonHeader
-                        title="Terapeuti"
+                        title="Terapeuți"
                     />
 
                     <div style={{ marginTop: 20, paddingLeft: 200, display: 'flex', alignItems: 'flex-start', flexDirection: 'column', justifyContent: 'center' }}>
@@ -246,7 +246,7 @@ const AdminScreen = () => {
                                 }}
                                 onClick={() => setTherapistAddModal(true)}
                             >
-                                Adauga terapeut
+                                Adaugă terapeut
                             </Button>
                         </div>
                     </div>
@@ -279,7 +279,7 @@ const AdminScreen = () => {
                                 }}
                                 onClick={() => setServiceAddModal(true)}
                             >
-                                Adauga serviciu
+                                Adaugă serviciu
                             </Button>
                         </div>
                     </div>
@@ -337,14 +337,14 @@ const CommonTable = ({ headers, rows, handleDelete }: CommonTableProps) => {
                                 >
                                     {
                                         headerItem.type === 'picture' ? (
-                                            <img
-                                                src={rowItem[headerItem.type]}
-                                                width={100}
-                                                height={100}
-                                                alt=""
-                                            />
-                                        ) :
-                                        headerItem.type === 'description' ? shortDescription(rowItem[headerItem.type]) : rowItem[headerItem.type]
+                                                <img
+                                                    src={rowItem[headerItem.type]}
+                                                    width={100}
+                                                    height={100}
+                                                    alt=""
+                                                />
+                                            ) :
+                                            headerItem.type === 'description' ? shortDescription(rowItem[headerItem.type]) : rowItem[headerItem.type]
                                     }
                                 </td>
                             ))

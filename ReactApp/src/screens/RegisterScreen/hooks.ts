@@ -16,7 +16,7 @@ const useRegisterScreen = () => {
 
     const loginContent = {
         title: 'Bine ai venit la cabinet!',
-        description: ' Creaza-ti un cont pentru a-ti vedea programarile',
+        description: ' Creează-ți un cont pentru a-ți vedea progrămarile',
         btnText: 'Sign up'
     };
 

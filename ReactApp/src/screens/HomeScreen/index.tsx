@@ -191,9 +191,9 @@ const HomeScreen = () => {
                 }
             ]
         },
-         {
-             isAnswer: true,
-             variants: []
+        {
+            isAnswer: true,
+            variants: []
         }
     ];
 
@@ -305,110 +305,110 @@ const HomeScreen = () => {
                 style={customStyles}
                 contentLabel="Example Modal"
             >
-              <div
-                style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    flex: 1,
-                    height: '90%',
-                    textAlign: 'center'
-                }}
-              >
-                  <h2 style={{ color: questions[questionStep]?.isAnswer ? '#000' : '#fff', marginTop: 60, fontSize: '40px' }}>{ questions[questionStep]?.isAnswer ? q10 : questions[questionStep].question }</h2>
-                  {
-                      questions[questionStep]?.isAnswer ?
-                          <div style={{ textAlign: "center", height: '100%', display: 'flex', flexDirection: 'column' }}>
-                              <div>
-                                  <h1 style={{ color: '#fff' }}>{currentAnswer}</h1>
-                              </div>
-                              <div
-                                style={{
-                                    marginTop: 'auto'
-                                }}
-                              >
-                                  <Button
-                                      variant="outlined"
-                                      style={{
-                                          backgroundColor: `#3C938F`,
-                                          borderColor: 'transparent',
-                                          color: '#fff',
-                                          width: '248px',
-                                          height: '74px',
-                                          borderRadius: '23px',
-                                          textTransform: 'capitalize',
-                                          fontSize: 19
-                                      }}
-                                      onClick={redirectToProgram}
-                                  >
-                                      Programeaza-te aici
-                                  </Button>
-                              </div>
-                          </div>
-                          : (
-                              <div style={{ marginTop: 'auto', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                                  {
-                                      questions[questionStep].isAge ? (
-                                          <div>
-                                              <InputComponent
-                                                  placeholder="Introduceti varsta"
-                                                  style={{
-                                                      minWidth: 320,
-                                                      backgroundColor: '#fff'
-                                                  }}
-                                                  value={age}
-                                                  onChange={(event: any) => setAge(event.target.value)}
-                                              />
-                                              <Button
-                                                  variant="outlined"
-                                                  style={{
-                                                      backgroundColor: `#fff`,
-                                                      borderColor: 'transparent',
-                                                      color: '#2F2E41',
-                                                      borderRadius: 11,
-                                                      paddingLeft: 23,
-                                                      paddingRight: 23,
-                                                      width: '50%',
-                                                      marginBottom: 10,
-                                                      paddingTop: 7,
-                                                      marginTop: 10,
-                                                      paddingBottom: 7,
-                                                      textTransform: 'capitalize',
-                                                      fontSize: 16
-                                                  }}
-                                                  onClick={() => handleSelectAnswer(questionStep, age)}
-                                              >
-                                                  Next
-                                              </Button>
-                                          </div>
-                                      ) : (
-                                          questions[questionStep].variants.map((variantItem, idx) => (
-                                              <Button
-                                                  variant="outlined"
-                                                  style={{
-                                                      backgroundColor: `#fff`,
-                                                      borderColor: 'transparent',
-                                                      color: '#2F2E41',
-                                                      borderRadius: 11,
-                                                      paddingLeft: 23,
-                                                      paddingRight: 23,
-                                                      width: '50%',
-                                                      marginBottom: idx === questions[questionStep].variants.length - 1 ? 80 : 10,
-                                                      paddingTop: 7,
-                                                      paddingBottom: 7,
-                                                      textTransform: 'capitalize',
-                                                      fontSize: 16
-                                                  }}
-                                                  onClick={() => handleSelectAnswer(questionStep, variantItem?.value)}
-                                              >
-                                                  { variantItem?.name }
-                                              </Button>
-                                          ))
-                                      )
-                                  }
-                              </div>
-                          )
-                  }
-              </div>
+                <div
+                    style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        flex: 1,
+                        height: '90%',
+                        textAlign: 'center'
+                    }}
+                >
+                    <h2 style={{ color: questions[questionStep]?.isAnswer ? '#000' : '#fff', marginTop: 60, fontSize: '40px' }}>{ questions[questionStep]?.isAnswer ? q10 : questions[questionStep].question }</h2>
+                    {
+                        questions[questionStep]?.isAnswer ?
+                            <div style={{ textAlign: "center", height: '100%', display: 'flex', flexDirection: 'column' }}>
+                                <div>
+                                    <h1 style={{ color: '#fff' }}>{currentAnswer}</h1>
+                                </div>
+                                <div
+                                    style={{
+                                        marginTop: 'auto'
+                                    }}
+                                >
+                                    <Button
+                                        variant="outlined"
+                                        style={{
+                                            backgroundColor: `#3C938F`,
+                                            borderColor: 'transparent',
+                                            color: '#fff',
+                                            width: '248px',
+                                            height: '74px',
+                                            borderRadius: '23px',
+                                            textTransform: 'capitalize',
+                                            fontSize: 19
+                                        }}
+                                        onClick={redirectToProgram}
+                                    >
+                                        Programeaza-te aici
+                                    </Button>
+                                </div>
+                            </div>
+                            : (
+                                <div style={{ marginTop: 'auto', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                                    {
+                                        questions[questionStep].isAge ? (
+                                            <div>
+                                                <InputComponent
+                                                    placeholder="Introduceti varsta"
+                                                    style={{
+                                                        minWidth: 320,
+                                                        backgroundColor: '#fff'
+                                                    }}
+                                                    value={age}
+                                                    onChange={(event: any) => setAge(event.target.value)}
+                                                />
+                                                <Button
+                                                    variant="outlined"
+                                                    style={{
+                                                        backgroundColor: `#fff`,
+                                                        borderColor: 'transparent',
+                                                        color: '#2F2E41',
+                                                        borderRadius: 11,
+                                                        paddingLeft: 23,
+                                                        paddingRight: 23,
+                                                        width: '50%',
+                                                        marginBottom: 10,
+                                                        paddingTop: 7,
+                                                        marginTop: 10,
+                                                        paddingBottom: 7,
+                                                        textTransform: 'capitalize',
+                                                        fontSize: 16
+                                                    }}
+                                                    onClick={() => handleSelectAnswer(questionStep, age)}
+                                                >
+                                                    Next
+                                                </Button>
+                                            </div>
+                                        ) : (
+                                            questions[questionStep].variants.map((variantItem, idx) => (
+                                                <Button
+                                                    variant="outlined"
+                                                    style={{
+                                                        backgroundColor: `#fff`,
+                                                        borderColor: 'transparent',
+                                                        color: '#2F2E41',
+                                                        borderRadius: 11,
+                                                        paddingLeft: 23,
+                                                        paddingRight: 23,
+                                                        width: '50%',
+                                                        marginBottom: idx === questions[questionStep].variants.length - 1 ? 80 : 10,
+                                                        paddingTop: 7,
+                                                        paddingBottom: 7,
+                                                        textTransform: 'capitalize',
+                                                        fontSize: 16
+                                                    }}
+                                                    onClick={() => handleSelectAnswer(questionStep, variantItem?.value)}
+                                                >
+                                                    { variantItem?.name }
+                                                </Button>
+                                            ))
+                                        )
+                                    }
+                                </div>
+                            )
+                    }
+                </div>
             </Modal>
             <div
                 className={classes.headerContent}
@@ -484,8 +484,8 @@ const HomeScreen = () => {
                         }}
                     >
                         <h1 style={{ fontWeight: 400 }}>Despre cabinet</h1>
-                        <p style={{ maxWidth: 270 }}>
-                            Cabinetul de PsihologicAnca Nicoli oferă servicii de psihologie pentru copii și adulți: evaluare psihologică, dezvoltare personală, logopedie, terapie de familie, de cuplu, consiliere, psihoterapia persoanelor aflate în dificultate. Ședințele de terapiile se pot desfășura atât la nivel individual, cât și la nivel familial, de cuplu sau de grup.
+                        <p style={{ maxWidth: 300, marginTop: 40 , textAlign: 'justify' }}>
+                            Cabinetul individual de logopedie și psihoterapie Anca Nicoli oferă servicii de psihologie pentru copii și adulți: evaluare psihologică, dezvoltare personală, logopedie, terapie de familie, de cuplu, consiliere, psihoterapia persoanelor aflate în dificultate. Ședințele de terapiile se pot desfășura atât la nivel individual, cât și la nivel familial, de cuplu sau de grup.
                         </p>
                     </Box>
                     <Box
@@ -694,7 +694,7 @@ const HomeScreen = () => {
                                     paddingLeft: 120
                                 }}
                             >
-                                <p>Pentru oricine are nevoie de ajutor în alegerea drumului spre vindecare în cadrul cabinetului, chestionarul de mai jos este o unealtă eficientă</p>
+                                <p>Pentru oricine are nevoie de ajutor în alegerea drumului spre vindecare în cadrul cabinetului, chestionarul de mai jos este o unealtă eficientă. Răspunde la întrebările următoare și află dacă ar fi indicat să începi procesul de terapie, precum și ce tip de serviciu ar fi benefic să încerci.</p>
                                 <Button
                                     variant="outlined"
                                     style={{

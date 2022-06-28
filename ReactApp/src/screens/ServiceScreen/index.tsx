@@ -19,43 +19,43 @@ const ServiceScreen = () => {
             pt={5}
         >
             <Grid item xs={10}>
-                    {
-                        services.map((serviceItem: any, idx: any) => (
-                            <div>
-                                <div
-                                    style={{
-                                        background: "rgba(36, 106, 115, 0.24)",
-                                        height: 134,
-                                        width: '100%',
-                                        display: 'flex',
-                                        position: 'relative',
-                                        flexDirection: 'column',
-                                        alignItems: 'center',
-                                        justifyContent: 'center',
-                                        fontSize: 20,
-                                        fontWeight: 'bold',
-                                        marginBottom: 20
-                                    }}
-                                >
-                                    <div>
-                                        <h1>{serviceItem.name}</h1>
-                                    </div>
-                                </div>
-                                <div style={{textAlign: 'justify'}}>
-                                    {
-                                        serviceItem.items.map((item: any, jdx: any) => (
-                                            <ContentImage
-                                                title={item.title}
-                                                description={item.content}
-                                                image={item.image}
-                                                imageDirection={item.imageDirection}
-                                            />
-                                        ))
-                                    }
+                {
+                    services.map((serviceItem: any, idx: any) => (
+                        <div>
+                            <div
+                                style={{
+                                    background: "rgba(36, 106, 115, 0.24)",
+                                    height: 134,
+                                    width: '100%',
+                                    display: 'flex',
+                                    position: 'relative',
+                                    flexDirection: 'column',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    fontSize: 20,
+                                    fontWeight: 'bold',
+                                    marginBottom: 20
+                                }}
+                            >
+                                <div>
+                                    <h1>{serviceItem.name}</h1>
                                 </div>
                             </div>
-                        ))
-                    }
+                            <div >
+                                {
+                                    serviceItem.items.map((item: any, jdx: any) => (
+                                        <ContentImage
+                                            title={item.title}
+                                            description={item.content}
+                                            image={item.image}
+                                            imageDirection={item.imageDirection}
+                                        />
+                                    ))
+                                }
+                            </div>
+                        </div>
+                    ))
+                }
             </Grid>
         </Grid>
     )

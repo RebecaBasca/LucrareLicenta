@@ -54,7 +54,7 @@ const renderLeftImage = ({ title, description, image}: any) => {
                     justifyContent: 'center'
                 }}
             >
-                <h1 style={{ fontWeight: 400 }}>{title}</h1>
+                <h1 style={{ fontWeight: 400 , marginTop: '-20px'}}>{title}</h1>
                 <p style={{ maxWidth: 270, textAlign: 'right' }}>
                     {description}
                 </p>

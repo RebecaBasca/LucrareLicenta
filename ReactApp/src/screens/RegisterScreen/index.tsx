@@ -52,12 +52,12 @@ const RegisterScreen = () => {
                                         fontWeight: 400
                                     }}
                                 >
-                                    Creaza-ti cont!
+                                    Creează-ți cont!
                                 </h1>
                             </Box>
                             <Box style={{ paddingBottom: 20 }}>
                                 <InputComponent
-                                    placeholder="Nume si prenume"
+                                    placeholder="Nume și prenume"
                                     icon={<AccountCircleOutlinedIcon />}
                                     style={{
                                         minWidth: 320
@@ -86,7 +86,7 @@ const RegisterScreen = () => {
                             </Box>
                             <Box style={{ paddingBottom: 20 }}>
                                 <InputComponent
-                                    placeholder="Password"
+                                    placeholder="Parolă"
                                     icon={<LockOutlinedIcon />}
                                     style={{
                                         minWidth: 320
@@ -99,7 +99,7 @@ const RegisterScreen = () => {
                                     error={!!values.passwordError}
                                 />
                             </Box>
-                            <Box style={{ paddingBottom: 20 }}>
+                            <Box style={{ paddingBottom: 20 , marginLeft: '-150px'}}>
                                 <FormControl>
                                     {/*<FormLabel id="demo-radio-buttons-group-label">Tip Cont</FormLabel>*/}
                                     <RadioGroup

@@ -114,7 +114,7 @@ const LoginScreen = () => {
                                         fontWeight: 400
                                     }}
                                 >
-                                    Intra in cont
+                                    Intră în cont
                                 </h1>
                             </Box>
                             <Box style={{ paddingBottom: 20 }}>

@@ -67,7 +67,7 @@ const ProfileScreen = () => {
                                     editableFields.name ? (
                                         <div>
                                             <InputComponent
-                                                placeholder="Nume si prenume"
+                                                placeholder="Nume și prenume"
                                                 style={{
                                                     minWidth: 320
                                                 }}
@@ -160,7 +160,7 @@ const ProfileScreen = () => {
             >
                 <div>
                     <CommonHeader
-                        title="Programari anterioare"
+                        title="Programări anterioare"
                     />
 
                     <div style={{ marginTop: 20, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -173,7 +173,7 @@ const ProfileScreen = () => {
 
                 <div>
                     <CommonHeader
-                        title="Programari viitoare"
+                        title="Programări viitoare"
                     />
 
                     <div style={{ marginTop: 20, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -186,24 +186,24 @@ const ProfileScreen = () => {
 
 
 
-                    <Box style = {{ display: 'flex', justifyContent: 'center'}}>
-                        <Button
-                            variant="outlined"
-                            style={{
-                                backgroundColor: `#3C938F`,
-                                borderColor: "transparent",
-                                color: 'white',
-                                borderRadius: "20px",
-                                width: '326px',
-                                height: '80px',
-                                textTransform: 'capitalize',
-                                //fontSize: 20
-                            }}
-                            onClick={() => navigate(ROUTES.schedule)}
-                        >
-                            ADAUGĂ O PROGRAMARE NOUĂ
-                        </Button>
-                    </Box>
+                <Box style = {{ display: 'flex', justifyContent: 'center'}}>
+                    <Button
+                        variant="outlined"
+                        style={{
+                            backgroundColor: `#3C938F`,
+                            borderColor: "transparent",
+                            color: 'white',
+                            borderRadius: "20px",
+                            width: '326px',
+                            height: '80px',
+                            textTransform: 'capitalize',
+                            //fontSize: 20
+                        }}
+                        onClick={() => navigate(ROUTES.schedule)}
+                    >
+                        ADAUGĂ O PROGRAMARE NOUĂ
+                    </Button>
+                </Box>
             </div>
         </>
     )
@@ -234,11 +234,11 @@ const CommonTable = ({ headers, rows }: CommonTableProps) => {
     return (
         <table className="commonTable" style={{ maxWidth: 900 }}>
             <thead>
-                <tr>
-                    {
-                        headers.map((headerItem, idx) => <th key={idx}>{headerItem.name}</th>)
-                    }
-                </tr>
+            <tr>
+                {
+                    headers.map((headerItem, idx) => <th key={idx}>{headerItem.name}</th>)
+                }
+            </tr>
             </thead>
             <tbody>
             {

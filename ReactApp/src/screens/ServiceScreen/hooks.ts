@@ -45,7 +45,7 @@ export const useServiceScreen = () => {
     useEffect(() => {
         setServices([
             {
-                name: "Servicii pentru adulti",
+                name: "Servicii pentru adulți",
                 items: adultsServices
             },
             {
