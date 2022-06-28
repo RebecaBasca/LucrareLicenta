@@ -1,6 +1,6 @@
 # Partea de frontend a aplicației
 
-## Proiectul ReactJs
+## Proiectul ReactJS
 
 Conține toate elementele ce construiesc interfața prezentată utilizatorului prin care beneficiază de toate facilitățile oferite de platformă și este un mediu ce permite comunicarea cu partea de backend necesară.
 
