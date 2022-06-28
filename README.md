@@ -31,7 +31,7 @@ Rulează pe portul: **5000**
 
  Conține în structura sa sintaxă de:
  - Python
- - 
+ 
  FlaskApp conține fișierele necesare prin care aplicația React transmite datele din chestionar și preia răspunsul generat în urma aplicării modelului antrenat de date asupra lor. Comunicarea dintre cele două proiecte re realizează prin cereri HTTP, cu rute special definite. 
 
 ### Baza de date folosită :  PostgreSQL
@@ -39,4 +39,4 @@ Rulează pe portul: **5000**
 
 ## Fișierul Licenta_alg_ML.ipynb
   Include conținutul unui fișier Google Colaboratory în care este implementat în Python un algoritm de învățare automată folosit pentru a crea predicțiile necesare generării unui răspuns în urma completării chestionarului de pe platformă. 
-  Setul de date inițial folosit este preluat de la OSMH și poate fi găsit în forma sa înițială [aici](https://osmhhelp.org/research).
+  Setul de date inițial folosit este preluat de la OSMH și poate fi găsit în forma sa inițială [aici](https://osmhhelp.org/research).
