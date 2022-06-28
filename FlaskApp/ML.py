@@ -13,6 +13,7 @@ def MLAlgorithm(formData):
     filename = 'static/finalized_model2.sav'
     my_forest = joblib.load(filename)
 
+
     global y_pred_class
     y_pred_class = my_forest.predict(dataframe_mytest)
 
