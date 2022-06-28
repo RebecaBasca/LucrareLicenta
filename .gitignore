@@ -38,7 +38,7 @@ NodeJSApp/node_modules/
 
 #Flask
 
-FlaskApp/venv/
-FlaskApp/templates/
-FlaskApp/_pycache_/
-FlaskApp/.idea/
+FlaskApp/venv/*
+FlaskApp/templates/*
+FlaskApp/_pycache_/*
+FlaskApp/.idea/*
