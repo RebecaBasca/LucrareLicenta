@@ -2,6 +2,6 @@ static*
 
 templates*
 
-.idea
+.idea/*
 
 \__pycache__
