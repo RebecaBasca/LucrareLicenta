@@ -225,13 +225,13 @@ const HomeScreen = () => {
         let ans = "Psihoterapie individuala";
 
         selectedAnswers.map((item: any, idx: any) => {
-            if(item.questionStep === 4 && item.answer) {
+            if(item.questionStep === 4 && item.answer==0) {
                 ans = "Consiliere parentala";
                 return ;
-            } else if(item.questionStep === 1 && item.answer) {
+            } else if(item.questionStep === 1 && item.answer==0) {
                 ans = "Logopedie";
                 return ;
-            } else if(item.questionStep === 2 && item.answer)  {
+            } else if(item.questionStep === 2 && item.answer==1)  {
                 ans = "Psihoterapie de cuplu";
                 return;
             } else {
